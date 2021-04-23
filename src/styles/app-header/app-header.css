@@ -1,11 +1,72 @@
+* {
+  /* border: 1px solid black; */
+}
+
 .app-header {
-  background: var(--color-primary);
-  color: var(--color-white);
+  background: var(--color-pale-cyan);
+  background-image: url(../../assets/images/bg-hero-mobile.svg);
+  width: 100%;
+  color: var(--color-dark-cyan);
   padding: 12px;
+}
+
+.app-header__top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+.app-header__top-logo {
+  display: block;
+  height: 1.2rem;
+}
+
+.app-header__top-button {
+  background: var(--color-white);
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.562);
+  border-radius: 2rem;
+  padding: 0.2rem 1rem;
+  font-size: 0.8rem;
 }
 
 .app-header__heading {
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 0.7rem;
   text-align: center;
+}
+
+.app-header__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.app-header__body-headline {
+  color: var(--color-dark-cyan);
+  text-align: center;
+}
+
+.app-header__body-text {
+  text-align: center;
+}
+
+.app-header__body-button {
+  background: var(--color-pink);
+  color: var(--color-white);
+  border: none;
+  border-radius: 2rem;
+  width: min(80%, 20rem);
+  padding: 0.8rem 0;
+  font-size: 0.8rem;
+  align-self: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.app-header__body-image {
+  width: 100%;
 }
