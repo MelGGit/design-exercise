@@ -8,6 +8,7 @@
   width: 100%;
   color: var(--color-dark-cyan);
   padding: 12px;
+  display: grid;
 }
 
 .app-header__top-header {
@@ -26,10 +27,11 @@
 .app-header__top-button {
   background: var(--color-white);
   border: none;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.562);
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.2);
   border-radius: 2rem;
   padding: 0.2rem 1rem;
   font-size: 0.8rem;
+  font-weight: 700;
 }
 
 .app-header__heading {
@@ -49,10 +51,12 @@
 .app-header__body-headline {
   color: var(--color-dark-cyan);
   text-align: center;
+  grid-area: headline;
 }
 
 .app-header__body-text {
   text-align: center;
+  grid-area: text;
 }
 
 .app-header__body-button {
@@ -63,10 +67,39 @@
   width: min(80%, 20rem);
   padding: 0.8rem 0;
   font-size: 0.8rem;
+  font-weight: 700;
   align-self: center;
   margin: 1rem 0 3rem 0;
+  grid-area: button;
 }
 
 .app-header__body-image {
   width: 100%;
+  grid-area: image;
+}
+
+@media (min-width: 600px) {
+  .app-header__top-button {
+    padding: 0.7rem 2.5rem;
+  }
+  .app-header__body {
+    display: grid;
+    grid-template-columns: calc(40% - 1rem) 2rem calc(60% - 1rem);
+    grid-template-rows: auto;
+    grid-template-areas:
+      '.        . image'
+      'headline . image'
+      'text     . image'
+      'button   . image';
+    align-self: end;
+  }
+  .app-header__body-headline {
+    text-align: left;
+  }
+  .app-header__body-text {
+    text-align: left;
+  }
+  .app-header__body-button {
+    width: min(80%, 15rem);
+  }
 }
