@@ -7,3 +7,5 @@
 
 @import './app-header/app-header.css';
 @import './app-footer/app-footer.css';
+@import './card/card.css';
+@import './card-cta/card-cta.css';
