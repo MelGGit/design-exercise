@@ -18,6 +18,7 @@ a:active {
 
 .footer__contact-list {
   padding-left: 2rem;
+  font-size: 0.8rem;
 }
 
 .footer__contact-list > li {
@@ -82,4 +83,43 @@ a:active {
 .footer__copy {
   font-size: 0.5rem;
   text-align: center;
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    padding: 10rem 5rem;
+    height: 40rem;
+    position: relative;
+  }
+
+  .footer__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 20%;
+    grid-template-areas: 'contact tag social';
+    column-gap: 2rem;
+  }
+
+  .footer__contact-list {
+    grid-area: 'contact';
+    align-self: center;
+  }
+
+  .footer__tag-list {
+    grid-area: 'tag';
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 10rem;
+    align-self: center;
+  }
+
+  .footer__social-list {
+    grid-area: 'social';
+  }
+
+  .footer__copy {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+  }
 }
