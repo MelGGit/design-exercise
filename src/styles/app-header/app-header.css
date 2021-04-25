@@ -28,7 +28,7 @@
   border: none;
   box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.2);
   border-radius: 2rem;
-  padding: 0.2rem 1rem;
+  padding: 0.5rem 2rem;
   font-size: 0.8rem;
   font-weight: 700;
 }
@@ -44,7 +44,8 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin-top: 4rem;
+  margin: 4rem 0;
+  padding: 0 2rem;
 }
 
 .app-header__body-headline {

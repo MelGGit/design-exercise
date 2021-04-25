@@ -10,10 +10,14 @@ a:active {
   color: inherit;
 }
 
+ul {
+  margin-top: 2rem;
+}
+
 .footer {
   background: var(--color-dark-cyan);
   color: var(--color-white);
-  padding: 12px;
+  padding: 10rem 12px 12px 12px;
 }
 
 .footer__contact-list {
