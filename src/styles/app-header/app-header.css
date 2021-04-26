@@ -44,7 +44,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin: 4rem 0;
+  margin: 4rem 0 1rem 0;
   padding: 0 2rem;
 }
 
@@ -92,6 +92,7 @@
       'text     . image'
       'button   . image';
     align-self: end;
+    margin: 4rem 0;
   }
   .app-header__body-headline {
     text-align: left;

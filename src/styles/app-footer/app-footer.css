@@ -31,6 +31,7 @@ ul {
 
 .footer__contact-list-item-1 {
   list-style-image: url(../../assets/images/icon-location.svg);
+  max-width: 420px;
 }
 
 .footer__contact-list-item-2 {
